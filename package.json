@@ -1,0 +1,31 @@
+{
+  "name": "periodo",
+  "version": "0.1.0",
+  "description": "Parse and generate a convenient string representation of a time period",
+  "main": "lib/main.js",
+  "scripts": {  
+    "test": "mocha -b --no-diff test/*.js",
+    "coverage": "nyc -r html -r text-summary mocha -b --no-diff test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/GCSBOSS/periodo.git"
+  },
+  "keywords": [
+    "parse",
+    "time",
+    "period",
+    "format",
+    "string",
+    "duration",
+    "length",
+    "datetime",
+    "timestamp"
+  ],
+  "author": "Guilherme C. Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/GCSBOSS/periodo/issues"
+  },
+  "homepage": "https://gitlab.com/GCSBOSS/periodo#readme"
+}
