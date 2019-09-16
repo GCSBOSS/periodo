@@ -58,11 +58,25 @@ describe('Periodo', function(){
 
     });
 
-    describe('Date Diff', function(){
+    describe('Date Operations', function(){
 
         it('Should return period between two dates', function(){
             let obj = periodo.diffDates('2012-12-12', '2013-12-12');
             assert.strictEqual(obj.string, '1y');
+        });
+
+        it('Should return a date decreased by the input amount', function(){
+            let now = Date.now();
+            periodo.subtractFrom('300ms');
+            let d = periodo.subtractFrom('300ms', now);
+            assert.strictEqual(d.getTime(), now - 300);
+        });
+
+        it('Should return a date increased by the input amount', function(){
+            let now = Date.now();
+            periodo.addTo('300ms');
+            let d = periodo.addTo('300ms', now);
+            assert.strictEqual(d.getTime(), now + 300);
         });
 
     });
