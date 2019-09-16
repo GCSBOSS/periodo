@@ -67,8 +67,7 @@ describe('Periodo', function(){
 
         it('Should return a date decreased by the input amount', function(){
             let now = Date.now();
-            periodo.subtractFrom('300ms');
-            let d = periodo.subtractFrom('300ms', now);
+            let d = periodo.addTo('-300ms', now);
             assert.strictEqual(d.getTime(), now - 300);
         });
 
