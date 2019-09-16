@@ -44,6 +44,14 @@ console.log(p3.time);
 // Get difference between two dates
 var p4 = periodo.diffDates('2012-12-12', new Date());
 console.log(p4.time);
+
+// Increase a date by a given period
+var d1 = periodo.addTo('2d', '2012-12-12');
+console.log(d1);
+
+// Decrease a date by a given period
+var d2 = periodo.addTo('-2d', new Date());
+console.log(d2);
 ```
 
 ## Reporting Bugs
